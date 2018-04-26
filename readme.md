@@ -1,0 +1,2 @@
+- javascript 模块写法
+- 原始"# AMD" 

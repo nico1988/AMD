@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>输入全局变量</title>
+    <script src="./js/jquery.js"></script>
+</head>
+<body>
+    <script>
+        $(function(){
+            var module1 = (function ($, YAHOO) {
+                var m1 = 1;
+                return {m1:m1};
+        　　})(jQuery, window.YAHOO || {})
+            console.log(module1.m1)
+            document.write(module1.m1)
+        })
+    </script>
+</body>
+</html>
